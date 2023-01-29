@@ -1,16 +1,38 @@
-# The URL the site will be built for
-base_url = "https://robwalt.dev"
+title = "robwalt.dev"
 
-# Whether to automatically compile all Sass files in the sass directory
+base_url = "https://robwalt.github.io"
+
 compile_sass = true
 
-# Whether to build a search index to be used later on by a JavaScript library
+theme = "hermit_zola"
+
 build_search_index = true
 
+taxonomies = [
+           {name = "tags", rss = true}
+]
+
+
 [markdown]
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
 
 [extra]
-# Put all your custom variables here
+home_subtitle = "United we stand, devided we fall"
+
+hermit_menu = [
+    { link = "/voluntary", name = "Voluntary Work" },
+    { link = "/books", name = "Books" },
+    { link = "/posts", name = "Posts" },
+    { link = "/about", name = "About" },
+]
+
+hermit_social = [
+    { name = "mastodon", link = "https://mastodon.social/@RobWalt" },
+    { name = "codeberg", link = "https://codeberg.org/RobWalt" },
+    { name = "email", link = "mailto:robwalter96@gmail.com" },
+    { name = "opencollective", link = "https://opencollective.com/rust-analyzer" }
+]
+
+[extra.author]
+name = "Robert Walter"
+homepage = "https://robwalt.gitlab.io/"
