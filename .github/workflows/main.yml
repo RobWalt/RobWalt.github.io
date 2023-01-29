@@ -15,4 +15,4 @@ jobs:
     - name: Build and deploy
       uses: robwalt/zola-deploy-action@master
       env:
-        TOKEN: ${{ secrets.TOKEN }}# On every push this script is executed
+        TOKEN: ${{ secrets.TOKEN }}
