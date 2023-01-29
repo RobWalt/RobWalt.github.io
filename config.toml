@@ -1,6 +1,6 @@
 title = "robwalt.dev"
 
-base_url = "https://robwalt.dev"
+base_url = "https://robwalt.github.io"
 
 compile_sass = true
 
