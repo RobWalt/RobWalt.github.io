@@ -16,4 +16,3 @@ jobs:
       uses: robwalt/zola-deploy-action@master
       env:
         TOKEN: ${{ secrets.TOKEN }}
-        GITHUB_HOSTNAME: https://robwalt.dev
