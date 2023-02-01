@@ -13,6 +13,6 @@ jobs:
     - name: Checkout main
       uses: actions/checkout@v3
     - name: Build and deploy
-      uses: robwalt/zola-deploy-action@saved-version
+      uses: robwalt/zola-deploy-action@master
       env:
         TOKEN: ${{ secrets.TOKEN }}
