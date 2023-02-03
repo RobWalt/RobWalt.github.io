@@ -2,7 +2,7 @@
 title="About"
 +++
 
-🚧🚧🚧 Under construction 🚧🚧🚧
+ <h1>🚧 Under Construction 🚧</h1>
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in urna interdum, semper ligula non, tempus felis. Etiam a lorem eros. Proin ultricies et felis non aliquam. Vivamus interdum egestas nulla et accumsan. Proin fringilla nisl id lectus vehicula elementum. In sed lacus rutrum, varius ipsum ac, suscipit ipsum. Donec facilisis efficitur dui eget suscipit. Praesent lobortis nisi in sapien interdum maximus. Phasellus pulvinar faucibus arcu, tristique egestas orci tincidunt id. Pellentesque malesuada maximus augue, ut pretium magna accumsan mattis. In tincidunt ex non diam convallis semper. Nulla eget turpis ac massa eleifend pellentesque at id lorem.
 
