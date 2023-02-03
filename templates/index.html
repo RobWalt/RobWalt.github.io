@@ -10,3 +10,17 @@
 	  {{macros::render_social_icons()}}
 	</div>
 	{% endblock title %}
+
+  {% block icon %}
+  <link rel="icon" type="image/png" sizes="32x32" href="{{get_url(path="fist-32x32.png")}}" />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="{{get_url(path="favicon-16x16.png")}}"
+  />
+  <link
+    rel="shortcut icon"
+    href="{{get_url(path="fist.ico")}}"
+  />
+  {% endblock icon %}
