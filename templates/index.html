@@ -4,7 +4,13 @@
 {% block title %}
 <div id="spotlight" class="animated fadeIn">
   <div id="home-center">
-	<h1 id="home-title">{{macros::fist()}}{{macros::fist()}}{{macros::fist()}}</h1>
+	<h1 id="home-title">
+    {{macros::fist(class_name="kaboomer1")}}
+    {{macros::fist(class_name="kaboomer2")}}
+    {{macros::fist(class_name="kaboomer3")}}
+    {{macros::fist(class_name="kaboomer4")}}
+    {{macros::fist(class_name="kaboomer5")}}
+  </h1>
 	<p id="home-subtitle">{{config.extra.home_subtitle}}</p>
 	<div id="home-social">
 	  {{macros::render_social_icons()}}
