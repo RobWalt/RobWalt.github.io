@@ -1,1 +1,6 @@
 {% extends "hermit_zola/templates/tags/single.html" %}
+{% import "mymacros.html" as macros %}
+
+{% block icons %}
+{{macros::render_social_icons()}}
+{% endblock icons %}
