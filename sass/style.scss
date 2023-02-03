@@ -598,12 +598,11 @@ hr.post-end {
   }
 }
 
-.desktop-only,
 #toc {
   position: fixed;
   left: 50%;
   top: 0;
-  display: block;
+  display: none;
 }
 
 .toc-title {
