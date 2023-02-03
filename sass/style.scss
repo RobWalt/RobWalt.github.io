@@ -602,7 +602,6 @@ hr.post-end {
   position: fixed;
   left: 50%;
   top: 0;
-  display: none;
 }
 
 .toc-title {
@@ -721,6 +720,7 @@ hr.post-end {
     top: 13em;
     margin-left: 370px;
     max-width: 220px;
+    display: block;
   }
 }
 
@@ -760,6 +760,7 @@ hr.post-end {
     top: 15em;
     margin-left: 490px;
     max-width: 300px;
+    display: block;
   }
 }
 
@@ -789,6 +790,10 @@ hr.post-end {
       margin: 0;
     }
   }
+
+  #toc {
+    display: none;
+  }
 }
 
 @media (max-width: 520px) {
@@ -805,6 +810,10 @@ hr.post-end {
 
   #mobile-menu {
     right: 1.2em;
+  }
+
+  #toc {
+    display: none;
   }
 }
 
