@@ -837,39 +837,61 @@ hr.post-end {
 }
 
 .kaboomer1 {
-  animation: kaboom 3s ease alternate infinite;
+  fill: LightGray;
+  animation: kaboom 5s ease normal infinite;
   animation-delay: 0.0s;
 }
 
 .kaboomer2 {
-  animation: kaboom 3s ease alternate infinite;
-  animation-delay: 0.3s;
+  fill: LightGray;
+  animation: kaboom 5s ease normal infinite;
+  animation-delay: 0.25s;
 }
 
 .kaboomer3 {
-  animation: kaboom 3s ease alternate infinite;
-  animation-delay: 0.6s;
+  fill: LightGray;
+  animation: kaboom 5s ease normal infinite;
+  animation-delay: 0.5s;
 }
 
 .kaboomer4 {
-  animation: kaboom 3s ease alternate infinite;
-  animation-delay: 0.9s;
+  fill: LightGray;
+  animation: kaboom 5s ease normal infinite;
+  animation-delay: 0.75s;
 }
 
 .kaboomer5 {
-  animation: kaboom 3s ease alternate infinite;
-  animation-delay: 1.2s;
+  fill: LightGray;
+  animation: kaboom 5s ease normal infinite;
+  animation-delay: 1.0s;
 }
 
 @keyframes kaboom {
   0% {
     transform: translate(0px, 0px);
+    fill: LightGray;
+    filter: none;
   }
-  90% {
+  30% {
     transform: translate(0px, 200px);
-    fill: gray;
+    fill: Gray;
+    filter: none;
+  }
+  50% {
+    transform: translate(0px, -400px);
+    fill: Beige;
+    border-radius: 50px;
+    filter: url("#red-glow");
+  }
+  70% {
+    transform: translate(0px, -400px);
+    fill: Beige;
+    border-radius: 50px;
+    filter: url("#red-glow");
   }
   100% {
-    transform: translate(0px, -300px);
+    transform: translate(0px, 0px);
+    fill: LightGray;
+    filter: none;
   }
 }
