@@ -30,9 +30,10 @@ hermit_social = [
     { name = "mastodon", link = "https://mastodon.social/@RobWalt" },
     { name = "codeberg", link = "https://codeberg.org/RobWalt" },
     { name = "email", link = "mailto:robwalter96@gmail.com" },
-    { name = "opencollective", link = "https://robwalt.dev/donations" }
+    { name = "opencollective", link = "https://robwalt.dev/donations" },
+    { name = "matrix", link = "@robwalt:matrix.org" },
 ]
 
 [extra.author]
 name = "Robert Walter"
-homepage = "https://robwalt.gitlab.io/"
+homepage = "https://robwalt.dev/"
