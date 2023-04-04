@@ -14,12 +14,6 @@ toc=true
 ##  Wie werden Funktionen in der Programmierung verwendet?
 ##  Übungen zur Verwendung von Funktionen
 
-#  Arrays
-
-##  Was sind Arrays?
-##  Wie werden Arrays in der Programmierung verwendet?
-##  Übungen zur Verwendung von Arrays
-
 #  Abschlussprojekt
 
 ##  Die Schüler werden ein kleines Projekt in Gruppenarbeit umsetzen, das die gelernten Konzepte beinhaltet.
