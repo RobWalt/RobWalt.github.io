@@ -103,61 +103,121 @@ Klicke auf den Link um das "Hello, World!" Programm zu testen!
 Wenn du den `Play-Button` gedrueckt hast, sollte die Nachricht "Hello, World!"
 in der Konsole zu sehen sein, wie im folgenden Bild.
 
-![Bild, das Hello World programmiert ausgefuehrt zeigt](./images/hello_world.png)
-
-<!-- reviewed bis hier -->
+![Bild, das Hello World programmiert ausgefuehrt zeigt](../../images/voluntary/2023-benno/hello_world.png)
 
 #  Was sind Variablen?
 
 ## Analogie
 
 Stell dir vor, du hast mehrere Brotbüchsen, die du mit verschiedenen Dingen
-füllen kannst, wie z.B. Butterbrote, Obst oder Kekse. Jede Brotbüchse hat
-einen eigenen Namen, damit du weißt, was drin ist und leicht darauf
-zugreifen kannst. Zum Beispiel könntest du eine Brotbüchse namens
-"Butterbrot" haben, in der du immer dein Butterbrot für die Schule
-aufbewahrst.
+füllen kannst, wie z.B. Butterbrote, Obst oder Kekse. Jede Brotbüchse hat einen
+Aufkleber mit einem eigenen Namen, damit du weißt, was drin ist. Zum Beispiel
+könntest du eine Brotbüchse namens "Butterbrot" haben, in der du immer dein
+Butterbrot für die Schule aufbewahrst oder eine Brotbuechse "Lieblingskekse" in
+der du die besten Kekse der Welt aufbewahrst.
 
-In der Programmierung ist eine Variable ähnlich wie eine Brotbüchse. Du kannst
-eine Variable erstellen und ihr einen Namen geben, um einen Wert zu
+In der Programmierung ist eine Variable ähnlich wie eine dieser Brotbüchsen. Du
+kannst eine Variable erstellen und ihr einen Namen geben, um einen Wert zu
 speichern, den du später im Programm verwenden kannst. Wenn du z.B. eine
 Variable "Alter" erstellst, kannst du ihr einen Wert wie "10" zuweisen und
 später im Programm auf den Wert zugreifen, um Berechnungen durchzuführen
 oder Entscheidungen zu treffen.
 
+## Nutzen in der Programmierung
+
+Nun koennte man natuerlich fragen: "Warum braucht man Variablen"? Dafuer gibt
+es hier ein einfaches Beispiel:
+
+Nehmen wir an, du willst ein Programm schreiben, in dem du ausrechnen willst, wie
+lange du insgesamt brauchst um eine bestimmt Bestellung an unterschiedlichsten
+Kuchen zu backen. Du weisst, dass dein bester Kuchen 40min im Ofen braucht
+und du bekommst folgende Liste an Bestellungen:
+
+- 1 Kuchen fuer den Buergermeister
+- 5 Kuchen fuer die Feuerwehr
+- 3 Kuchen fuer die Familie vom Baecker selbst
+
+Also ueberlegst du dir in welchen Schritten der Computer die Gesamtbackdauer
+ausrechnen kann und kommst auf folgende Anleitung. :
+
+- `1 * 40min =  40min`
+- `5 * 40min = 200min`
+- `3 * 40min = 120min`
+- Insgesamt `40min + 200min + 120min = 360min`
+
+Nun bist du aber ziemlich erfinderisch und erstellst ein neues Rezept, das noch
+besser schmecken soll als dein letzter bester Kuchen. Das neue Rezept benoetigt
+aber 45min im Ofen. Du bekommst wieder die selbe Bestellungsliste und willst
+die Gesamtbackdauer mit deinem Programm berechnen. Jetzt musst du in allen
+Schritten deinen Berechnung die neue Backdauer eintragen:
+
+- `1 * ` **`45min`** ` =  45min`
+- `5 * ` **`45min`** ` = 225min`
+- `3 * ` **`45min`** ` = 135min`
+- Insgesamt `45min + 225min + 135min = 405min`
+
+Anstelle jetzt jedes mal an allen Stellen in deinem Programm die neue Backdauer
+anzugeben, kommst du auf die Idee einfach eine Variable fuer die Backdauer zu
+verwenden. Das erspart viel Arbeit. Das neue Programm ist folgendes:
+
+- **`backdauer = 45min`**
+- `1 * ` **`backdauer min`** ` =  45min`
+- `5 * ` **`backdauer min`** ` = 225min`
+- `3 * ` **`backdauer min`** ` = 135min`
+- Insgesamt `45min + 225min + 135min = 405min`
+
+Nun musst du nur an einer Stelle Aenderungen vornehmen, wenn du ein neues
+Kuchenrezept verwenden moechtest.
+
+Wir sehen also: Variablen helfen uns dabei viel muehselige Arbeit zu vermeiden.
+
 ## Beispiele
 
-In Javascript schreiben wir
+Wenn wir unser Programm aus dem letzten Beispiel in JavaScript uebersetzen
+wuerden, dann saehe das in etwa so hier aus:
 
 ```js
-var mein_name = "Robert"
-var mein_alter = 27
-var geburts_jahr = 2023 - 27
+let backdauer = 45
+
+let buergermeister_kuchen = 1 * backdauer
+let feuerwehr_kuchen = 5 * backdauer
+let baecker_kuchen = 3 * backdauer
+
+let gesamt_back_dauer = buergermeister_kuchen + feuerwehr_kuchen + baecker_kuchen
+
+print("Die Gesamtbackdauer ist: " + gesamt_back_dauer + "min")
 ```
 
-Waehrend unser Programm laeuft, sind diese Werte nun abgespeicht unter dem
-Namen, der nach dem `var` steht. Demnach hat folgender Code den selben
-Effekt:
+In diesem Beispiel sehen wir auch, dass wir die Zwischenergebnisse in Variablen
+speichern. Das ist die Art und Weise, wie wir dem Computer sagen koennen, dass
+er sich etwas merken soll. Wuerden wir einfach nur die Backdauer der einzelnen
+Kuchen so hier ausrechnen:
 
-```js 
-print("Mein Alter ist: " + 27)
-print("Mein Alter ist: " + mein_alter)
+```js
+1 * backdauer
+5 * backdauer
+3 * backdauer
 ```
 
-oder
+dann wuerde der Computer die Ergebnisse sofort wieder vergessen und wir
+koennten sie auch nicht weiter verwenden.
 
-```js 
-print("Mein Geburtsjahr ist: " + 1996)
-print("Mein Geburtsjahr ist: " + (2023 - 27))
-print("Mein Geburtsjahr ist: " + (2023 - mein_alter))
-print("Mein Geburtsjahr ist: " + geburts_jahr)
-```
-
-Wir koennen also einfach die Variable mit dem Wert hinter dem `=` ersetzen.
+Noch ein Hinweis: Die Variablen Namen oben nutzen Unterstriche in den Namen
+(`buergermeister_kuchen`), da es nicht erlaubt ist Leerzeichen in
+Variablennamen zu verwenden.
 
 ## Selbst ausprobieren
 
 [Variables](https://editor.p5js.org/RobWalt/sketches/A6Mwj2H11)
+
+Kleine Aufgaben:
+
+1. Aendere die Backdauer des Kuchens und teste, wie sich das Ergebnis aendert
+2. Fuege noch 4 Kuchen fuer die Foerster zur Liste hinzu
+  - Berechne die Backdauer der Foersterkuchen
+  - Vergiss nicht diese Backdauer auf das Gesamtergbnis zu addieren
+
+<!-- reviewed bis hier -->
 
 #  Was sind Bedingungen?
 
