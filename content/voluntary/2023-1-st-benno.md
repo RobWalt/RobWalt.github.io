@@ -8,6 +8,8 @@ tags=["voluntary", "school", "teaching", "p5js"]
 toc=true
 +++
 
+<!-- Abstraction is hard, Be concrete first -->
+
 # Einführung in die Programmierung
 
 ##  Was ist Programmierung?
@@ -29,9 +31,9 @@ Ein einfaches Beispiel für eine Aufgabe, die wir dem Computer geben können, is
 Addieren von zwei Zahlen. Die konkreten Anweisungen unserer Anleitung fuer den
 Computer waeren dann:
 
-1. Wir speichern unseren ersten Summanden
-1. Wir speichern unseren zeiten Summanden
-3. Die Zahlen sollen addiert und erneut als Summe abgespeichert werden
+1. Speichere in `zahl1` den Wert `5`
+2. Speichere in `zahl2` den Wert `3`
+3. Speichere in `summe` die Summe von `zahl1` und `zahl2`
 
 Hier ist ein Beispiel, wie das in JavaScript aussehen koennte:
 
@@ -41,35 +43,31 @@ let zahl2 = 3;
 let summe = zahl1 + zahl2;
 ```
 
-<!-- reviewed bis hier -->
-
 ##  Warum ist Programmieren wichtig?
 
 Programmierung ist wichtig, weil sie uns hilft, Computer und andere
 elektronische Geräte zu steuern und ihnen zu sagen, was sie tun sollen. Ohne
 Programmierung könnten wir nicht die vielen nützlichen Dinge tun, die wir heute
-mit Computern und anderen Geräten tun können, wie z.B. das Surfen im Internet,
-das Spielen von Videospielen oder das Schreiben von Texten.
+mit Computern und anderen Geräten tun können, wie z.B. das Kommunizieren durch Apps,
+das Spielen von Videospielen oder das Einkaufen in Online Shops.
 
-Darüber hinaus ist Programmierung auch in vielen anderen Bereichen wichtig, wie
-z.B. in der Wissenschaft, wo Programmierung für Simulationen und Datenanalyse
-verwendet wird. Hier sind einige Beispiele aus Medizin, Biologie und Physik:
+Darüber hinaus ist Programmierung auch in vielen Wissenschaften wichtig. Dort wird
+sie beispielsweise für Simulationen und Datenanalyse verwendet. Hier sind einige
+Beispiele aus Medizin, Biologie und Physik:
 
-In der Medizin kann Programmierung verwendet werden, um die Diagnose und
+- In der Medizin kann Programmierung verwendet werden, um die Diagnose und
 Behandlung von Krankheiten zu verbessern. Beispielsweise können Programme zur
 Bildverarbeitung verwendet werden, um medizinische Bilder wie CT-Scans und
 MRI-Scans zu analysieren und genaue Diagnosen zu erstellen. Programme können
 auch bei der Entwicklung von Medikamenten und Therapien helfen, indem sie die
 Wechselwirkungen zwischen Arzneimitteln und biologischen Systemen simulieren.
-
-In der Biologie kann Programmierung verwendet werden, um komplexe biologische
+- In der Biologie kann Programmierung verwendet werden, um komplexe biologische
 Prozesse zu simulieren und zu modellieren. Mit Programmen können Forscher
 beispielsweise das Wachstum von Zellen und Organismen verstehen oder das
 Verhalten von Viren und Bakterien untersuchen. Programmierung kann auch in der
-Genomik eingesetzt werden, um genetische Daten zu analysieren und Muster in
+Genetik eingesetzt werden, um genetische Daten zu analysieren und Muster in
 DNA-Sequenzen zu erkennen.
-
-In der Physik kann Programmierung verwendet werden, um komplexe mathematische
+- In der Physik kann Programmierung verwendet werden, um komplexe mathematische
 Modelle zu erstellen und Simulationen durchzuführen. Mit Programmen können
 Forscher beispielsweise das Verhalten von Teilchen in Atomkernen simulieren
 oder die Bewegungen von Sternen und Galaxien im Universum untersuchen.
@@ -77,20 +75,18 @@ Programmierung kann auch bei der Entwicklung von fortschrittlichen Technologien
 wie Raumfahrtantrieben und Robotiksystemen eingesetzt werden.
 
 Insgesamt kann Programmierung uns also dabei helfen, komplexe Probleme zu
-lösen, Dinge einfacher und schneller zu machen und die Welt um uns herum besser
-zu verstehen.
+lösen, die Welt um uns herum besser zu verstehen und viele Dinge in unserem
+Leben einfacher zu machen.
 
-#   Die ersten Schritte in der Programmierung
+# Die ersten Schritte in der Programmierung
 
-##  Was ist P5.js ?
+## Was ist p5.js ?
 
-P5.js ist eine Programmiersprache, die es dir ermöglicht, coole und interaktive
-Kunst- und Designprojekte zu erstellen. Mit p5.js kannst du Formen, Farben und
-Bewegungen auf dem Bildschirm erstellen und sogar mit der Maus oder der
-Tastatur interagieren. Es ist eine großartige Möglichkeit, deine Kreativität
-und deine Fähigkeiten in Mathematik und Programmierung zu entwickeln. P5.js
-wird oft von Künstlern, Designern und Programmierern genutzt, um neue,
-aufregende Wege zu finden, um ihre Ideen zum Leben zu erwecken.
+`p5.js` ist ein Programmiergrundgeruest in Javascript, das uns ermöglicht,
+coole und interaktive Kunst- und Designprojekte zu erstellen. Mit `p5.js`
+kannst du Formen, Farben und Bewegungen auf dem Bildschirm erstellen und sogar
+mit der Maus oder der Tastatur interagieren. Es ist eine großartige
+Möglichkeit, deine Kreativität und deine Programmier-Fähigkeiten zu entwickeln.
 
 ##  Ausführen des ersten Programms (Hello, World!)
 
@@ -100,9 +96,16 @@ neue Programmiersprache lernt. Der Zweck des Programms ist es, sicherzustellen,
 dass alles richtig eingerichtet ist und funktioniert. Das Programm tut nichts
 Besonderes - es gibt einfach nur den Text "Hello World" auf dem Bildschirm aus.
 
-<iframe src="https://editor.p5js.org/RobWalt/full/oi31W8JNZ"></iframe>
+Klicke auf den Link um das "Hello, World!" Programm zu testen!
 
 [Hello, World!](https://editor.p5js.org/RobWalt/sketches/oi31W8JNZ)
+
+Wenn du den `Play-Button` gedrueckt hast, sollte die Nachricht "Hello, World!"
+in der Konsole zu sehen sein, wie im folgenden Bild.
+
+![Bild, das Hello World programmiert ausgefuehrt zeigt](./images/hello_world.png)
+
+<!-- reviewed bis hier -->
 
 #  Was sind Variablen?
 
