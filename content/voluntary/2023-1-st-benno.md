@@ -151,9 +151,9 @@ aber 45min im Ofen. Du bekommst wieder die selbe Bestellungsliste und willst
 die Gesamtbackdauer mit deinem Programm berechnen. Jetzt musst du in allen
 Schritten deinen Berechnung die neue Backdauer eintragen:
 
-- `1 * ` **`45min`** ` =  45min`
-- `5 * ` **`45min`** ` = 225min`
-- `3 * ` **`45min`** ` = 135min`
+- `1 * 45min =  45min`
+- `5 * 45min = 225min`
+- `3 * 45min = 135min`
 - Insgesamt `45min + 225min + 135min = 405min`
 
 Anstelle jetzt jedes mal an allen Stellen in deinem Programm die neue Backdauer
@@ -161,9 +161,9 @@ anzugeben, kommst du auf die Idee einfach eine Variable fuer die Backdauer zu
 verwenden. Das erspart viel Arbeit. Das neue Programm ist folgendes:
 
 - **`backdauer = 45min`**
-- `1 * ` **`backdauer min`** ` =  45min`
-- `5 * ` **`backdauer min`** ` = 225min`
-- `3 * ` **`backdauer min`** ` = 135min`
+- `1 * backdauer min =  45min`
+- `5 * backdauer min = 225min`
+- `3 * backdauer min = 135min`
 - Insgesamt `45min + 225min + 135min = 405min`
 
 Nun musst du nur an einer Stelle Aenderungen vornehmen, wenn du ein neues
@@ -208,7 +208,7 @@ Variablennamen zu verwenden.
 
 ## Selbst ausprobieren
 
-[Variables](https://editor.p5js.org/RobWalt/sketches/A6Mwj2H11)
+[Variablen](https://editor.p5js.org/RobWalt/sketches/A6Mwj2H11)
 
 Kleine Aufgaben:
 
@@ -217,54 +217,132 @@ Kleine Aufgaben:
   - Berechne die Backdauer der Foersterkuchen
   - Vergiss nicht diese Backdauer auf das Gesamtergbnis zu addieren
 
-<!-- reviewed bis hier -->
+# Was sind Bedingungen?
 
-#  Was sind Bedingungen?
-
-##  Analogie
+## Analogie
 
 Stell dir vor, du bist in der Küche und möchtest einen Kuchen backen. Bevor du
-den Kuchen in den Ofen schiebst, musst du sicherstellen, dass er fertig zum
-Backen ist. Zum Beispiel musst du sicherstellen, dass du alle Zutaten hast und
-dass der Ofen auf die richtige Temperatur vorgeheizt ist. Wenn diese
-Bedingungen erfüllt sind, kannst du den Kuchen in den Ofen schieben und backen.
+den Kuchen in den Ofen schiebst, musst du sicherstellen, dass alle
+Vorbereitungen zum Backen getroffen wurden. Zum Beispiel musst du
+sicherstellen, dass der Ofen auf die richtige Temperatur vorgeheizt ist. Wenn
+diese Bedingung erfüllt ist, kannst du den Kuchen in den Ofen schieben und backen.
 
-In der Programmierung ist es ähnlich. Bevor ein Programm eine Aktion ausführt,
-muss es sicherstellen, dass bestimmte Bedingungen erfüllt sind. Zum Beispiel
-kann ein Programm eine Bedingung überprüfen, ob eine Variable eine bestimmte
-Zahl enthält. Wenn diese Bedingung erfüllt ist, kann das Programm eine Aktion
-ausführen. Wenn die Bedingung nicht erfüllt ist, kann das Programm eine andere
-Aktion ausführen oder einfach weiterlaufen.
+In der Programmierung ist es ähnlich. Manchmal muss ein Programm sicherstellen,
+dass bestimmte Bedingungen erfüllt sind, bevor es eine Aktion ausführt. Zum
+Beispiel kann ein Programm eine Bedingung überprüfen, ob eine Variable eine
+bestimmte Zahl oder einen bestimmten Text enthält. Wenn diese Bedingung erfüllt
+ist, kann das Programm eine Aktion ausführen. Wenn die Bedingung nicht erfüllt
+ist, kann das Programm eine andere Aktion ausführen oder einfach weiterlaufen.
 
-So wie du sicherstellen musst, dass der Kuchen fertig zum Backen ist, bevor du
-ihn in den Ofen schiebst, muss ein Programm sicherstellen, dass bestimmte
-Bedingungen erfüllt sind, bevor es eine Aktion ausführt.
+## Nutzen in der Programmierung
+
+Hier ist ein kleines konkretes Beispiel, warum Bedingungen in der Programmierung nuetzlich sind:
+
+Nehmen wir an, du willst ein Programm schreiben, das eine aktuelle Beschreibung
+des Wetters in einer Variable speichert und dir basierend darauf eine kleine
+Nachricht ausgibt. Das Wetter kann "Sonne", "Regen" oder "Wolken" sein. Alle
+anderen Beschreibungen magst du erstmal nicht in deinem Programm nutzen. (Wir
+koennen sie spaeter noch ganz einfach hinzufuegen!)
+
+Du ueberlegst dir wieder Schritte, die der Computer ausfuehren muss, um die
+Aufgabe deines Programms zu erfuellen. Sie lauten wiefolgt:
+
+- Speichere eine Beschreibung des Wetters unter der Variable `wetter` ab, z.B.
+  `let wetter = "Sonne"` (Achtung! Bei Text brauchen wir Anfuehrungszeichen,
+  sonst denkt der Computer es handelt sich um eine Variable)
+- Wenn das `wetter` den Wert `"Sonne"` hat, dann schreibe in die Konsole `"Das
+  Wetter ist heute toll!"`.
+- Wenn das `wetter` den Wert `"Regen"` hat, dann schreibe in die Konsole `"Es
+  regnet!"`.
+- Wenn das `wetter` den Wert `"Wolken"` hat, dann schreibe in die Konsole
+  `"Heute ist das Wetter langweilig!"`.
+- Wenn das `wetter` einen anderen Wert annimmt, dann haben wir einen Fehler und
+  sollten das auch nennen. Z.B. `"Banane"` waere kein zulaessiger Wert fuer
+  unser Wetterprogramm. Wenn das der Fall ist, dann schreibe in die Konsole
+  `wetter hatte einen unbekannten Wert!`
+
+## Beispiel
+
+Im naechsten Schritt uebersetzt du wieder dein Programm in JavaScript code.
+
+```js 
+let wetter = "Sonne"
+
+if (wetter == "Sonne") {
+  print("Das Wetter ist heute toll!")
+} else if (wetter == "Regen") {
+  print("Es regnet!")
+} else if (wetter == "Wolken") {
+  print("Heute ist das Wetter langweilig!")
+} else {
+  print("wetter hatte einen unbekannten Wert!")
+}
+```
+
+Hierbei sehen wir:
+
+- Bedingungen werden mit dem Schluesselwort `if ( ... ) { ... }` eingeleitet
+  und pruefen ob der Inhalt der runden Klammern wahr ist
+- Wir koennen testen, ob zwei Werte gleich sind mit `==`, beim code oben zum
+  Beispiel in den ersten runden Klammern: `wetter == "Sonne"`
+- Wenn sich der Wert in den runden Klammern als wahr herausstellt, dann wird
+  der Code in den geschwiften Klammern ausgefuehrt und der Rest der `if`
+  Bedingung wird uebersprungen
+- Wenn sich der Wert in den runden Klammern jedoch als falsch herausstellt,
+  dann wird die naechste Bedingung geprueft
+- Wir koennen fuer mehrere Bedingungen testen. Die zweite, dritte, usw.
+  Bedingung wird mit `else if ( ... ) { ... }` eingeleitet
+- Wenn keine Bedingung zutrifft koennen wir die `if` Bedingung mit `else { ...
+  }` beenden. Dann wird der Code aus der letzten geschweiften Klammer
+  ausgefuehrt.
+
+## Selbst ausprobieren
+
+[Bedingungen](https://editor.p5js.org/RobWalt/sketches/jkkZv9LyF)
 
 #  Übungen zur Verwendung von Variablen und Bedingungen
 
-1. Schreibe ein Programm, das den Benutzernamen in einer Variable speichert und dann ihn in einer Begrüßungsnachricht auf der Konsole begrüßt. 
-  - Zum Beispiel: "Hallo, [Benutzername]! Willkommen in unserer Kueche!"
-2. Schreibe ein Programm, das das Gewicht von Zucker und Mehl in zwei separaten Variablen abspeichert und dann das Gesamtgewicht der Zutaten auf der Webseite anzeigt.
+1. Schreibe ein Programm, das den Benutzernamen in einer Variable speichert und
+   dann den Nutzer in einer Begrüßungsnachricht auf der Konsole begrüßt. 
+  - Tipp: Du kannst Variablen in Text mit `+` einbinden: `"Hallo, " + name`
+  - Zum Beispiel: `"Hallo, [Benutzername]! Willkommen in unserer Kueche!"`
+2. Schreibe ein Programm, das das Gewicht von Zucker und Mehl in zwei separaten
+   Variablen abspeichert und dann das Gesamtgewicht der Zutaten auf der
+   Webseite anzeigt.
   - Tipp: Teste `text("TestText!", width / 2, height / 2)` und passe es für die Aufgabe an.
-  - Zum Beispiel: "Du hast 1 Kilo Zucker und 2 Kilo Mehl verwendet. Insgesamt hast du 3 Kilo Zutaten!")
-3. Schreibe ein Programm, das das Alter des Benutzers in einer Variable speichert und dann prüft, ob er/sie alt genug ist, um Kaffee zu trinken.
-  - Zum Beispiel: "Wow, du bist schon [Alter]. Du bist alt genug, um Kaffee zu trinken!"
-4. Schreibe ein Programm, das die Lieblingszahl des Benutzers in einer Variable abspeichert, diese dann mit einer zufaelligen Zahl multipliziert und dann ausgibt, wie viele Stuecke Kuchen der Benutzer geschenkt bekommt.
+  - Zum Beispiel: `"Du hast 1 Kilo Zucker und 2 Kilo Mehl verwendet. Insgesamt hast du 3 Kilo Zutaten!"`
+3. Schreibe ein Programm, das das Alter des Benutzers / der Benutzerin in einer Variable
+   speichert und dann prüft, ob er/sie alt genug ist, um Kaffee zu trinken.
+  - Zum Beispiel: `"Wow, du bist schon [Alter]. Du bist alt genug, um Kaffee zu trinken!"`
+4. Schreibe ein Programm, das die Lieblingszahl des Benutzers / der Benutzerin
+   in einer Variable abspeichert, diese dann mit einer zufaelligen Zahl
+   multipliziert und dann ausgibt, wie viele Stuecke Kuchen der Benutzer
+   geschenkt bekommt.
   - Tipp: Nutze `random(n)` um eine zufaellige Zahl zwischen `0` und `n` zu generieren
-  - Zum Beispiel: "Deine Lieblingszahl ist [Lieblingszahl]. Du bekommst von mir [Anzahl der Stücke] Stücke Kuchen!"
-5. Schreibe ein Programm, das eine Temperatur in Fahrenheit in einer Variable abspeichert und dann die Temperatur in Celsius umrechnet und auf der Webseite anzeigt. 
-  - Tipp: die Formel ist (fahrenheit - 32) / 1.8 = celsius. 
-  - Zum Beispiel: "Die Temperatur im Ofen beträgt 350 Grad Fahrenheit? Das entspricht 176 Grad Celsius!"
-6. Schreibe ein Programm, das die Länge und Breite eines Backblechs in zwei Variablen speichert und dann die Fläche des Bleches auf der Webseite anzeigt.
-  - Zum Beispiel: "Das Backblech ist 5cm lang und 3cm breit. Die Fläche beträgt 15cm²!"
-7. Schreibe ein Programm, das den Radius eines Kekses in einer Variable abspeichert und dann dessen Umfang und Fläche auf der Webseite anzeigt.
+  - Zum Beispiel: `"Deine Lieblingszahl ist [Lieblingszahl]. Du bekommst von mir [Anzahl der Stücke] Stücke Kuchen!"`
+5. Schreibe ein Programm, das eine Temperatur in Fahrenheit in einer Variable
+   abspeichert und dann die Temperatur in Celsius umrechnet und auf der
+   Webseite anzeigt. 
+  - Tipp: die Formel ist `(fahrenheit - 32) / 1.8 = celsius`. 
+  - Zum Beispiel: `"Die Temperatur im Ofen beträgt 350 Grad Fahrenheit? Das entspricht 176 Grad Celsius!"`
+6. Schreibe ein Programm, das die Länge und Breite eines Backblechs in zwei
+   Variablen speichert und dann die Fläche des Bleches auf der Webseite
+   anzeigt.
+  - Tipp: Die Flaeche des Backblechs koennen wir mit `hoehe * breite` berechnen
+  - Zum Beispiel: `"Das Backblech ist 5cm lang und 3cm breit. Die Fläche beträgt 15cm²!"`
+7. Schreibe ein Programm, das den Radius eines Kekses in einer Variable
+   abspeichert und dann dessen Umfang und Fläche auf der Webseite anzeigt.
   - Tipp: `PI` ist als feste Variable in p5.js vorgegeben
   - Tipp: die Formel ist `umfang = 2 * PI * radius`
-  - Zum Beispiel: "Der Keks hat einen Radius von 4cm. Der Umfang beträgt 25,13cm und die Fläche beträgt 50,27cm²!"
-8. Schreibe ein Programm, das eine Anzahl von Minuten in einer Variable abspeichert und dann die Anzahl der Stunden und Minuten, die ein Kuchen im Ofen ist, auf der Webseite anzeigt.
+  - Zum Beispiel: `"Der Keks hat einen Radius von 4cm. Der Umfang beträgt 25,13cm und die Fläche beträgt 50,27cm²!"`
+8. Schreibe ein Programm, das eine Anzahl von Minuten in einer Variable
+   abspeichert und dann die Anzahl der Stunden und Minuten, die ein Kuchen im
+   Ofen ist, auf der Webseite anzeigt.
   - schwer!
   - Nutze Rest Rechnung: `5 % 2 = 1`, was bedeutet bei 5 geteilt durch 2 bleibt Rest 1 übrig
   - Zum Beispiel: "Du hast den Kuchen 65 Minuten im Ofen gelassen? Das sind 1 Stunde und 5 Minuten!"
+
+<!-- reviewed bis hier -->
 
 #  Arrays
 
