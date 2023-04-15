@@ -15,7 +15,7 @@ toc=true
 ##  Was ist Programmierung?
 
 Stell dir vor, du bist der Regisseur eines Films. Du hast eine großartige Idee
-für eine Filmszene. Ueberasschenderweise bekommst die einmalige Chance deine
+für eine Filmszene. Überasschenderweise bekommst die einmalige Chance deine
 Szene zu verfilmen. Jetzt musst du all die Dinge planen, die passieren werden -
 wann die Schauspieler sprechen, wie sie sich bewegen, welche Emotionen sie
 darstellen und so weiter.
@@ -28,14 +28,14 @@ wie er sie tun soll. Wenn du all diese Anweisungen geschrieben hast, kann der
 Computer sie ausführen und deine Idee in die Tat umsetzen.
 
 Ein einfaches Beispiel für eine Aufgabe, die wir dem Computer geben können, ist das
-Addieren von zwei Zahlen. Die konkreten Anweisungen unserer Anleitung fuer den
-Computer waeren dann:
+Addieren von zwei Zahlen. Die konkreten Anweisungen unserer Anleitung für den
+Computer wären dann:
 
 1. Speichere in `zahl1` den Wert `5`
 2. Speichere in `zahl2` den Wert `3`
 3. Speichere in `summe` die Summe von `zahl1` und `zahl2`
 
-Hier ist ein Beispiel, wie das in JavaScript aussehen koennte:
+Hier ist ein Beispiel, wie das in JavaScript aussehen könnte:
 
 ```js 
 let zahl1 = 5;
@@ -82,7 +82,7 @@ Leben einfacher zu machen.
 
 ## Was ist p5.js ?
 
-`p5.js` ist ein Programmiergrundgeruest in Javascript, das uns ermöglicht,
+`p5.js` ist ein Programmiergrundgerüst in Javascript, das uns ermöglicht,
 coole und interaktive Kunst- und Designprojekte zu erstellen. Mit `p5.js`
 kannst du Formen, Farben und Bewegungen auf dem Bildschirm erstellen und sogar
 mit der Maus oder der Tastatur interagieren. Es ist eine großartige
@@ -100,10 +100,10 @@ Klicke auf den Link um das "Hello, World!" Programm zu testen!
 
 [Hello, World!](https://editor.p5js.org/RobWalt/sketches/oi31W8JNZ)
 
-Wenn du den `Play-Button` gedrueckt hast, sollte die Nachricht "Hello, World!"
+Wenn du den `Play-Button` gedrückt hast, sollte die Nachricht "Hello, World!"
 in der Konsole zu sehen sein, wie im folgenden Bild.
 
-![Bild, das Hello World programmiert ausgefuehrt zeigt](../../images/voluntary/2023-benno/hello_world.png)
+![Bild, das Hello World programmiert ausgeführt zeigt](../../images/voluntary/2023-benno/hello_world.png)
 
 #  Was sind Variablen?
 
@@ -113,7 +113,7 @@ Stell dir vor, du hast mehrere Brotbüchsen, die du mit verschiedenen Dingen
 füllen kannst, wie z.B. Butterbrote, Obst oder Kekse. Jede Brotbüchse hat einen
 Aufkleber mit einem eigenen Namen, damit du weißt, was drin ist. Zum Beispiel
 könntest du eine Brotbüchse namens "Butterbrot" haben, in der du immer dein
-Butterbrot für die Schule aufbewahrst oder eine Brotbuechse "Lieblingskekse" in
+Butterbrot für die Schule aufbewahrst oder eine Brotbüchse "Lieblingskekse" in
 der du die besten Kekse der Welt aufbewahrst.
 
 In der Programmierung ist eine Variable ähnlich wie eine dieser Brotbüchsen. Du
@@ -125,7 +125,7 @@ oder Entscheidungen zu treffen.
 
 ## Nutzen in der Programmierung
 
-Nun koennte man natuerlich fragen: "Warum braucht man Variablen"? Dafuer gibt
+Nun könnte man natürlich fragen: "Warum braucht man Variablen"? Dafür gibt
 es hier ein einfaches Beispiel:
 
 Nehmen wir an, du willst ein Programm schreiben, in dem du ausrechnen willst, wie
@@ -133,11 +133,11 @@ lange du insgesamt brauchst um eine bestimmt Bestellung an unterschiedlichsten
 Kuchen zu backen. Du weisst, dass dein bester Kuchen 40min im Ofen braucht
 und du bekommst folgende Liste an Bestellungen:
 
-- 1 Kuchen fuer den Buergermeister
-- 5 Kuchen fuer die Feuerwehr
-- 3 Kuchen fuer die Familie vom Baecker selbst
+- 1 Kuchen für den Bürgermeister
+- 5 Kuchen für die Feuerwehr
+- 3 Kuchen für die Familie vom Bäcker selbst
 
-Also ueberlegst du dir in welchen Schritten der Computer die Gesamtbackdauer
+Also überlegst du dir in welchen Schritten der Computer die Gesamtbackdauer
 ausrechnen kann und kommst auf folgende Anleitung. :
 
 - `1 * 40min =  40min`
@@ -146,7 +146,7 @@ ausrechnen kann und kommst auf folgende Anleitung. :
 - Insgesamt `40min + 200min + 120min = 360min`
 
 Nun bist du aber ziemlich erfinderisch und erstellst ein neues Rezept, das noch
-besser schmecken soll als dein letzter bester Kuchen. Das neue Rezept benoetigt
+besser schmecken soll als dein letzter bester Kuchen. Das neue Rezept benötigt
 aber 45min im Ofen. Du bekommst wieder die selbe Bestellungsliste und willst
 die Gesamtbackdauer mit deinem Programm berechnen. Jetzt musst du in allen
 Schritten deinen Berechnung die neue Backdauer eintragen:
@@ -157,7 +157,7 @@ Schritten deinen Berechnung die neue Backdauer eintragen:
 - Insgesamt `45min + 225min + 135min = 405min`
 
 Anstelle jetzt jedes mal an allen Stellen in deinem Programm die neue Backdauer
-anzugeben, kommst du auf die Idee einfach eine Variable fuer die Backdauer zu
+anzugeben, kommst du auf die Idee einfach eine Variable für die Backdauer zu
 verwenden. Das erspart viel Arbeit. Das neue Programm ist folgendes:
 
 - **`backdauer = 45min`**
@@ -166,15 +166,15 @@ verwenden. Das erspart viel Arbeit. Das neue Programm ist folgendes:
 - `3 * backdauer min = 135min`
 - Insgesamt `45min + 225min + 135min = 405min`
 
-Nun musst du nur an einer Stelle Aenderungen vornehmen, wenn du ein neues
-Kuchenrezept verwenden moechtest.
+Nun musst du nur an einer Stelle Änderungen vornehmen, wenn du ein neues
+Kuchenrezept verwenden möchtest.
 
-Wir sehen also: Variablen helfen uns dabei viel muehselige Arbeit zu vermeiden.
+Wir sehen also: Variablen helfen uns dabei viel mühselige Arbeit zu vermeiden.
 
 ## Beispiele
 
-Wenn wir unser Programm aus dem letzten Beispiel in JavaScript uebersetzen
-wuerden, dann saehe das in etwa so hier aus:
+Wenn wir unser Programm aus dem letzten Beispiel in JavaScript übersetzen
+würden, dann sähe das in etwa so hier aus:
 
 ```js
 let backdauer = 45
@@ -189,8 +189,8 @@ print("Die Gesamtbackdauer ist: " + gesamt_back_dauer + "min")
 ```
 
 In diesem Beispiel sehen wir auch, dass wir die Zwischenergebnisse in Variablen
-speichern. Das ist die Art und Weise, wie wir dem Computer sagen koennen, dass
-er sich etwas merken soll. Wuerden wir einfach nur die Backdauer der einzelnen
+speichern. Das ist die Art und Weise, wie wir dem Computer sagen können, dass
+er sich etwas merken soll. Würden wir einfach nur die Backdauer der einzelnen
 Kuchen so hier ausrechnen:
 
 ```js
@@ -199,8 +199,8 @@ Kuchen so hier ausrechnen:
 3 * backdauer
 ```
 
-dann wuerde der Computer die Ergebnisse sofort wieder vergessen und wir
-koennten sie auch nicht weiter verwenden.
+dann würde der Computer die Ergebnisse sofort wieder vergessen und wir
+könnten sie auch nicht weiter verwenden.
 
 Noch ein Hinweis: Die Variablen Namen oben nutzen Unterstriche in den Namen
 (`buergermeister_kuchen`), da es nicht erlaubt ist Leerzeichen in
@@ -212,9 +212,9 @@ Variablennamen zu verwenden.
 
 Kleine Aufgaben:
 
-1. Aendere die Backdauer des Kuchens und teste, wie sich das Ergebnis aendert
-2. Fuege noch 4 Kuchen fuer die Foerster zur Liste hinzu
-  - Berechne die Backdauer der Foersterkuchen
+1. Ändere die Backdauer des Kuchens und teste, wie sich das Ergebnis ändert
+2. Füge noch 4 Kuchen für die Förster zur Liste hinzu
+  - Berechne die Backdauer der Försterkuchen
   - Vergiss nicht diese Backdauer auf das Gesamtergbnis zu addieren
 
 # Was sind Bedingungen?
@@ -236,19 +236,19 @@ ist, kann das Programm eine andere Aktion ausführen oder einfach weiterlaufen.
 
 ## Nutzen in der Programmierung
 
-Hier ist ein kleines konkretes Beispiel, warum Bedingungen in der Programmierung nuetzlich sind:
+Hier ist ein kleines konkretes Beispiel, warum Bedingungen in der Programmierung nützlich sind:
 
 Nehmen wir an, du willst ein Programm schreiben, das eine aktuelle Beschreibung
 des Wetters in einer Variable speichert und dir basierend darauf eine kleine
 Nachricht ausgibt. Das Wetter kann "Sonne", "Regen" oder "Wolken" sein. Alle
 anderen Beschreibungen magst du erstmal nicht in deinem Programm nutzen. (Wir
-koennen sie spaeter noch ganz einfach hinzufuegen!)
+können sie später noch ganz einfach hinzufügen!)
 
-Du ueberlegst dir wieder Schritte, die der Computer ausfuehren muss, um die
-Aufgabe deines Programms zu erfuellen. Sie lauten wiefolgt:
+Du überlegst dir wieder Schritte, die der Computer ausführen muss, um die
+Aufgabe deines Programms zu erfüllen. Sie lauten wiefolgt:
 
 - Speichere eine Beschreibung des Wetters unter der Variable `wetter` ab, z.B.
-  `let wetter = "Sonne"` (Achtung! Bei Text brauchen wir Anfuehrungszeichen,
+  `let wetter = "Sonne"` (Achtung! Bei Text brauchen wir Anführungszeichen,
   sonst denkt der Computer es handelt sich um eine Variable)
 - Wenn das `wetter` den Wert `"Sonne"` hat, dann schreibe in die Konsole `"Das
   Wetter ist heute toll!"`.
@@ -257,13 +257,13 @@ Aufgabe deines Programms zu erfuellen. Sie lauten wiefolgt:
 - Wenn das `wetter` den Wert `"Wolken"` hat, dann schreibe in die Konsole
   `"Heute ist das Wetter langweilig!"`.
 - Wenn das `wetter` einen anderen Wert annimmt, dann haben wir einen Fehler und
-  sollten das auch nennen. Z.B. `"Banane"` waere kein zulaessiger Wert fuer
+  sollten das auch nennen. Z.B. `"Banane"` wäre kein zulässiger Wert für
   unser Wetterprogramm. Wenn das der Fall ist, dann schreibe in die Konsole
   `wetter hatte einen unbekannten Wert!`
 
 ## Beispiel
 
-Im naechsten Schritt uebersetzt du wieder dein Programm in JavaScript code.
+Im nächsten Schritt übersetzt du wieder dein Programm in JavaScript code.
 
 ```js 
 let wetter = "Sonne"
@@ -281,20 +281,20 @@ if (wetter == "Sonne") {
 
 Hierbei sehen wir:
 
-- Bedingungen werden mit dem Schluesselwort `if ( ... ) { ... }` eingeleitet
-  und pruefen ob der Inhalt der runden Klammern wahr ist
-- Wir koennen testen, ob zwei Werte gleich sind mit `==`, beim code oben zum
+- Bedingungen werden mit dem Schlüsselwort `if ( ... ) { ... }` eingeleitet
+  und prüfen ob der Inhalt der runden Klammern wahr ist
+- Wir können testen, ob zwei Werte gleich sind mit `==`, beim code oben zum
   Beispiel in den ersten runden Klammern: `wetter == "Sonne"`
 - Wenn sich der Wert in den runden Klammern als wahr herausstellt, dann wird
-  der Code in den geschwiften Klammern ausgefuehrt und der Rest der `if`
-  Bedingung wird uebersprungen
+  der Code in den geschwiften Klammern ausgeführt und der Rest der `if`
+  Bedingung wird übersprungen
 - Wenn sich der Wert in den runden Klammern jedoch als falsch herausstellt,
-  dann wird die naechste Bedingung geprueft
-- Wir koennen fuer mehrere Bedingungen testen. Die zweite, dritte, usw.
+  dann wird die nächste Bedingung geprüft
+- Wir können für mehrere Bedingungen testen. Die zweite, dritte, usw.
   Bedingung wird mit `else if ( ... ) { ... }` eingeleitet
-- Wenn keine Bedingung zutrifft koennen wir die `if` Bedingung mit `else { ...
+- Wenn keine Bedingung zutrifft können wir die `if` Bedingung mit `else { ...
   }` beenden. Dann wird der Code aus der letzten geschweiften Klammer
-  ausgefuehrt.
+  ausgeführt.
 
 ## Selbst ausprobieren
 
@@ -305,7 +305,7 @@ Hierbei sehen wir:
 1. Schreibe ein Programm, das den Benutzernamen in einer Variable speichert und
    dann den Nutzer in einer Begrüßungsnachricht auf der Konsole begrüßt. 
   - Tipp: Du kannst Variablen in Text mit `+` einbinden: `"Hallo, " + name`
-  - Zum Beispiel: `"Hallo, [Benutzername]! Willkommen in unserer Kueche!"`
+  - Zum Beispiel: `"Hallo, [Benutzername]! Willkommen in unserer Küche!"`
 2. Schreibe ein Programm, das das Gewicht von Zucker und Mehl in zwei separaten
    Variablen abspeichert und dann das Gesamtgewicht der Zutaten auf der
    Webseite anzeigt.
@@ -315,10 +315,10 @@ Hierbei sehen wir:
    speichert und dann prüft, ob er/sie alt genug ist, um Kaffee zu trinken.
   - Zum Beispiel: `"Wow, du bist schon [Alter]. Du bist alt genug, um Kaffee zu trinken!"`
 4. Schreibe ein Programm, das die Lieblingszahl des Benutzers / der Benutzerin
-   in einer Variable abspeichert, diese dann mit einer zufaelligen Zahl
-   multipliziert und dann ausgibt, wie viele Stuecke Kuchen der Benutzer
+   in einer Variable abspeichert, diese dann mit einer zufälligen Zahl
+   multipliziert und dann ausgibt, wie viele Stücke Kuchen der Benutzer
    geschenkt bekommt.
-  - Tipp: Nutze `random(n)` um eine zufaellige Zahl zwischen `0` und `n` zu generieren
+  - Tipp: Nutze `random(n)` um eine zufällige Zahl zwischen `0` und `n` zu generieren
   - Zum Beispiel: `"Deine Lieblingszahl ist [Lieblingszahl]. Du bekommst von mir [Anzahl der Stücke] Stücke Kuchen!"`
 5. Schreibe ein Programm, das eine Temperatur in Fahrenheit in einer Variable
    abspeichert und dann die Temperatur in Celsius umrechnet und auf der
@@ -328,7 +328,7 @@ Hierbei sehen wir:
 6. Schreibe ein Programm, das die Länge und Breite eines Backblechs in zwei
    Variablen speichert und dann die Fläche des Bleches auf der Webseite
    anzeigt.
-  - Tipp: Die Flaeche des Backblechs koennen wir mit `hoehe * breite` berechnen
+  - Tipp: Die Fläche des Backblechs können wir mit `hoehe * breite` berechnen
   - Zum Beispiel: `"Das Backblech ist 5cm lang und 3cm breit. Die Fläche beträgt 15cm²!"`
 7. Schreibe ein Programm, das den Radius eines Kekses in einer Variable
    abspeichert und dann dessen Umfang und Fläche auf der Webseite anzeigt.
