@@ -104,11 +104,40 @@ Wir sehen im code:
 
 #  Übungen zur Verwendung von Funktionen
 
+1. Schreibe eine Funktion zum Addieren von zwei Zahlen: Sie nimmt zwei Zahlen als Parameter und diese addiert. Gib das Ergebnis mit `return` zurück und gib es auf der Konsole aus.
+ - Tipp: Mit dem Schluesselwort `return` kann eine Funktion Werte zuruekgeben. In etwa so:
+ - Beispiele: 
+ ```js 
+ function gib_mir_fuenf() {
+   return 5;
+ }
+
+ let fuenf = gib_mir_fuenf();
+
+ function addiere_eins(eingabe) {
+   return eingabe + 1;
+ }
+
+ let drei = addiere_eins(2);
+ ```
+2. Schreibe eine Funktion zum Umrechnen von Celsius in Fahrenheit: Sie nimmt eine Temperatur in Celsius als Parameter und rechnet diese in Fahrenheit um. Gib das Ergebnis mit `return` zurück und gib es auf der Konsole aus.
+  - Tipp: die Formel ist `fahrenheit = celsius * 1.8 + 32`. 
+3. Schreibe eine Funktion zum Überprüfen, ob eine Zahl gerade oder ungerade ist: Sie nimmt eine Zahl als Parameter und überprüft, ob diese gerade oder ungerade ist. Gib das Ergebnis mit `return` zurück und gib es auf der Konsole aus.
+  - Tipp: Eine Zahl ist gerade, wenn beim Teilen durch `2` Rest `0` uebrigbleibt.
+  - Nutze Rest Rechnung: `5 % 2 = 1`, was bedeutet bei 5 geteilt durch 2 bleibt Rest 1 übrig
+  - Tipp: Diese Funktion gibt einen Wahrheitswert zurueck, also `true` oder `false`
+4. Schreibe eine Funktion zum Überprüfen, ob eine Zahl in einem bestimmten Bereich liegt: Sie nimmt eine Zahl zum ueberpruefen, die kleinste Zahl im Bereich und die groesste Zahl im Bereich als Parameter nimmt und überprüft, ob die Zahl in dem durch die zwei Werte definierten Bereich liegt. Gib das Ergebnis zurück und gib es auf der Konsole aus.
+  - Tipp: Diese Funktion gibt einen Wahrheitswert zurueck, also `true` oder `false`
+  - Diese Zahl wird sehr nuetzlich beim Schreiben unseres Spiels sein
+5. Schreibe eine Funktion, die in p5js ein Gesicht mit zwei Augen nur mit Kreisen malt: Sie nimmt keine Argumente und malt das Gesicht einfach.
+  - Tipp: Nutze die `circle` Funktion von p5js. Sie nimmt die folgenden Argumente `circle(x, y, d)` wobei 
+    - `x` die horizontale Position ist
+    - `y` die vertikale Position ist
+    - `d` der Durchmesser ist
+  wenn nicht klar ist, was diese Werte tun, dann probiere es durch ausprobieren herauszufinden
+    
+
 #  Abschlussprojekt (Jumpy Bike)
 
-##  Die Schüler werden ein kleines Projekt in Gruppenarbeit umsetzen, das die gelernten Konzepte beinhaltet.
+Im Spiel Jumpy Bike hat leider mein Hund einige Zeilen Code geloescht. Kannst du mir mit deinen neu gelernten Programmier-Skills helfen, das Spiel wieder spielbar zu machen?
 
-#  Abschluss
-
-##  Zusammenfassung der gelernten Konzepte
-##  Ausblick auf weiterführende Programmierkurse oder eigene Projekte

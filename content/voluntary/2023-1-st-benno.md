@@ -305,40 +305,41 @@ Hierbei sehen wir:
 1. Schreibe ein Programm, das den Benutzernamen in einer Variable speichert und
    dann den Nutzer in einer Begrüßungsnachricht auf der Konsole begrüßt. 
   - Tipp: Du kannst Variablen in Text mit `+` einbinden: `"Hallo, " + name`
-  - Zum Beispiel: `"Hallo, [Benutzername]! Willkommen in unserer Küche!"`
+  - Beispiel Ausgabe: `"Hallo, [Benutzername]! Willkommen in unserer Küche!"`
 2. Schreibe ein Programm, das das Gewicht von Zucker und Mehl in zwei separaten
    Variablen abspeichert und dann das Gesamtgewicht der Zutaten auf der
    Webseite anzeigt.
   - Tipp: Teste `text("TestText!", width / 2, height / 2)` und passe es für die Aufgabe an.
-  - Zum Beispiel: `"Du hast 1 Kilo Zucker und 2 Kilo Mehl verwendet. Insgesamt hast du 3 Kilo Zutaten!"`
+  - Beispiel Ausgabe: `"Du hast 1 Kilo Zucker und 2 Kilo Mehl verwendet. Insgesamt hast du 3 Kilo Zutaten!"`
 3. Schreibe ein Programm, das das Alter des Benutzers / der Benutzerin in einer Variable
    speichert und dann prüft, ob er/sie alt genug ist, um Kaffee zu trinken.
-  - Zum Beispiel: `"Wow, du bist schon [Alter]. Du bist alt genug, um Kaffee zu trinken!"`
+  - Beispiel Ausgabe: `"Wow, du bist schon [Alter]. Du bist alt genug, um Kaffee zu trinken!"`
 4. Schreibe ein Programm, das die Lieblingszahl des Benutzers / der Benutzerin
    in einer Variable abspeichert, diese dann mit einer zufälligen Zahl
-   multipliziert und dann ausgibt, wie viele Stücke Kuchen der Benutzer
-   geschenkt bekommt.
+   multipliziert. Das Ergebnis gibt dann an, wie viele Stücke Kuchen der Benutzer
+   geschenkt bekommt. Gib dieses Ergebnis aus!
   - Tipp: Nutze `random(n)` um eine zufällige Zahl zwischen `0` und `n` zu generieren
-  - Zum Beispiel: `"Deine Lieblingszahl ist [Lieblingszahl]. Du bekommst von mir [Anzahl der Stücke] Stücke Kuchen!"`
+  - Beispiel Ausgabe: `"Deine Lieblingszahl ist [Lieblingszahl]. Du bekommst von mir [Anzahl der Stücke] Stücke Kuchen!"`
 5. Schreibe ein Programm, das eine Temperatur in Fahrenheit in einer Variable
    abspeichert und dann die Temperatur in Celsius umrechnet und auf der
    Webseite anzeigt. 
   - Tipp: die Formel ist `(fahrenheit - 32) / 1.8 = celsius`. 
-  - Zum Beispiel: `"Die Temperatur im Ofen beträgt 350 Grad Fahrenheit? Das entspricht 176 Grad Celsius!"`
+  - Beispiel Ausgabe: `"Die Temperatur im Ofen beträgt 350 Grad Fahrenheit? Das entspricht 176 Grad Celsius!"`
 6. Schreibe ein Programm, das die Länge und Breite eines Backblechs in zwei
    Variablen speichert und dann die Fläche des Bleches auf der Webseite
    anzeigt.
   - Tipp: Die Fläche des Backblechs können wir mit `hoehe * breite` berechnen
-  - Zum Beispiel: `"Das Backblech ist 5cm lang und 3cm breit. Die Fläche beträgt 15cm²!"`
+  - Beispiel Ausgabe: `"Das Backblech ist 5cm lang und 3cm breit. Die Fläche beträgt 15cm²!"`
 7. Schreibe ein Programm, das den Radius eines Kekses in einer Variable
    abspeichert und dann dessen Umfang und Fläche auf der Webseite anzeigt.
   - Tipp: `PI` ist als feste Variable in p5.js vorgegeben
-  - Tipp: die Formel ist `umfang = 2 * PI * radius`
-  - Zum Beispiel: `"Der Keks hat einen Radius von 4cm. Der Umfang beträgt 25,13cm und die Fläche beträgt 50,27cm²!"`
-8. Schreibe ein Programm, das eine Anzahl von Minuten in einer Variable
+  - Tipp: die Umfang-Formel ist `umfang = 2 * PI * radius`
+  - Tipp: die Flächen-Formel ist `flaeche = PI * radius * radius`
+  - Beispiel Ausgabe: `"Der Keks hat einen Radius von 4cm. Der Umfang beträgt 25,13cm und die Fläche beträgt 50,27cm²!"`
+8. Extra Aufgabe: Schreibe ein Programm, das eine Anzahl von Minuten in einer Variable
    abspeichert und dann die Anzahl der Stunden und Minuten, die ein Kuchen im
    Ofen ist, auf der Webseite anzeigt.
   - schwer!
   - Nutze Rest Rechnung: `5 % 2 = 1`, was bedeutet bei 5 geteilt durch 2 bleibt Rest 1 übrig
-  - Zum Beispiel: "Du hast den Kuchen 65 Minuten im Ofen gelassen? Das sind 1 Stunde und 5 Minuten!"
+  - Beispiel Ausgabe: "Du hast den Kuchen 65 Minuten im Ofen gelassen? Das sind 1 Stunde und 5 Minuten!"
 
