@@ -480,5 +480,7 @@ Im Spiel Jumpy Bike hat leider mein Hund einige Zeilen Code gelöscht. Kannst du
 
 <details>
 <summary>Lösungen</summary>
-[Jumpy Bike gelöst](https://editor.p5js.org/RobWalt/sketches/Qg-hH8pcP)
+<a url="https://editor.p5js.org/RobWalt/sketches/Qg-hH8pcP">
+Jumpy Bike gelöst
+</a>
 </details>
