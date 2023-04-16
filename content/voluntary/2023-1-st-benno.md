@@ -487,4 +487,4 @@ Jumpy Bike gelöst
 
 # Ende 
 
-Hey! Danke, wenn du bis hierher alles mitgemacht hast! Wenn du Fragen oder generelles Feedback hast, dann schreib mir einfach eine E-Mail unter `robwalter96@gmail.com`. Danke nochmal und bis bald! 👋
+Hey! Danke, wenn du bis hierher alles mitgemacht hast! Wenn du jetzt Interesse am Lernen von mehr p5js hast, dann kann ich dir wärmstens die [YewTube-Playlist von Daniel Shiffman](https://yewtu.be/watch?v=8j0UDiN7my4) empfehlen. Fun Fact: Meine ersten Programmier-Erfahrungen haben auch mit dieser Playlist begonnen. Wenn du sont noch Fragen oder generelles Feedback hast, dann schreib mir gern einfach eine E-Mail unter `robwalter96@gmail.com`. Danke nochmal und bis bald! 👋
