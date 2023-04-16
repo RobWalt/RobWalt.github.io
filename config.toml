@@ -21,9 +21,9 @@ home_subtitle = "United we stand, devided we fall"
 
 hermit_menu = [
     { link = "/voluntary", name = "Voluntary Work" },
-    { link = "/books", name = "Books" },
-    { link = "/posts", name = "Posts" },
-    { link = "/about", name = "About" },
+   # { link = "/books", name = "Books" },
+   # { link = "/posts", name = "Posts" },
+   # { link = "/about", name = "About" },
 ]
 
 hermit_social = [
