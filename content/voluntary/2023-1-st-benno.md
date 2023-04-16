@@ -484,3 +484,7 @@ Im Spiel Jumpy Bike hat leider mein Hund einige Zeilen Code gelöscht. Kannst du
 Jumpy Bike gelöst
 </a>
 </details>
+
+# Ende 
+
+Hey! Danke, wenn du bis hierher alles mitgemacht hast! Wenn du Fragen oder generelles Feedback hast, dann schreib mir einfach eine E-Mail unter `robwalter96@gmail.com`. Danke nochmal und bis bald! 👋
