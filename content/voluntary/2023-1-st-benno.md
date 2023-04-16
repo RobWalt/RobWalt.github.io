@@ -1,5 +1,5 @@
 +++
-title = "St. Benno Gymnasium Dresden"
+title = "St. Benno Gymnasium Dresden SAW 2023"
 date = 2023-04-17
 draft = false
 [taxonomies]
