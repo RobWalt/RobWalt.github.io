@@ -1,12 +1,16 @@
 +++
-title = "Ideen fuer ein Linux & OSS GTA"
-date = 2023-04-04
+title = "Sammlung aller Ideen"
+date = 2023-09-18
 draft = true
 [taxonomies]
 tags=["voluntary", "school", "teaching", "linux", "oss"]
 [extra]
 toc=true
 +++
+
+---
+LINUX KURS
+---
 
 # Einführung in Linux und Open Source
 ## Was ist Linux und Open Source?
@@ -62,3 +66,19 @@ toc=true
 ## Open-Source-Philosophie
 ## Linux-Communities und Foren
 ## Linux-Dokumentation und Tutorials
+
+---
+MISC
+---
+
+# Git Intro
+
+- Alle arbeiten an einem git repo
+- Jeder bekommt eine Aufgabe auf einem Zettel 
+- Wir gehen die entstehenden Szenarien zusammen durch
+
+- Installieren von linux
+
+- Intro FOSS
+
+- What is Json
