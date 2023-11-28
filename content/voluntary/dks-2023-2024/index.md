@@ -48,7 +48,7 @@ function draw() {
 
 Wenn wir das Programm ausfuehren, dann sehen wir folgendes Bild 
 
-![Grauer Hintergrund beim Ausfuehren von p5js Standardprogramm](../../images/voluntary/2023-2024-dks/001-basic.png)
+![Grauer Hintergrund beim Ausfuehren von p5js Standardprogramm](./imgs/001-basic.png)
 
 Fuer das erste Kapitel reicht es aus, den Code wiefolgt anzupassen
 
@@ -151,7 +151,7 @@ function setup() {
 }
 ```
 
-![Overlapping rectangles which have colors ranging from red smoothly to a sky blue](../../images/voluntary/2023-2024-dks/002-example1.png)
+![Overlapping rectangles which have colors ranging from red smoothly to a sky blue](./imgs/002-example1.png)
 
 # 2. Loops und neue Befehle
 
@@ -174,7 +174,7 @@ function setup() {
 
 Auch wenn du die Werte im `createCanvas` Befehl aenderst, wird nun der Kreis immer perfekt in der Mitte platziert werden.
 
-![A white circle that is centered on a square canvas](../../images/voluntary/2023-2024-dks/003-centered.png)
+![A white circle that is centered on a square canvas](./imgs/003-centered.png)
 
 ## Zufaellige Zahlenwerte (`random`)
 
@@ -306,7 +306,7 @@ for (let i = 0; i < width; i = i + 25) {
 
 Wird alle 25 Pixel zwischen 0 und `width` ein Kreis mit einem Mittelpunkt mit x-Wert i (0, 25, 50, 75, 100, ...), auf mittiger Hoehe und einem Radius von `i / 10` (0, 2.5, 5.0, 7.5, 10.0, ...) gezeichnet.
 
-![Circles with random colors in a line growing bigger from left to right](../../images/voluntary/2023-2024-dks/004-loops.png)
+![Circles with random colors in a line growing bigger from left to right](./imgs/004-loops.png)
 
 ## Die `draw` Funktion, `frameRate` und `frameCount`
 
@@ -387,7 +387,7 @@ function draw() {
 
 In diesem Program wird jede Sekunde der Bildschirm mit der Hintergrundfarbe uebermalt und dann ein Kreis an der aktuellen Position des Mauszeigers gemalt.
 
-![A white circle is painted and follows the cursor](../../images/voluntary/2023-2024-dks/005-mousexy.gif) 
+![A white circle is painted and follows the cursor](./imgs/005-mousexy.gif) 
 
 Man kann die Werte auch fuer andere Sachen als nur die Position benutzen. Versuche einmal selbst folgendes:
 
@@ -460,7 +460,7 @@ function setup() {
 }
 ```
 
-![Multiple overlapping circles with radii from a list](../../images/voluntary/2023-2024-dks/006-list.png) 
+![Multiple overlapping circles with radii from a list](./imgs/006-list.png) 
 
 Wie zu sehen ist, muessen wir uns ziemlich oft wiederholen, um alle Werte aus der Liste zu nutzen. Was koennte uns mit Wiederholungen helfen? Richtig: For-Schleifen. Es gibt eine Standard-Loesung um etwas mit allen Werten in einer Liste zu machen, die wiefolgt aussieht:
 
@@ -476,7 +476,7 @@ function setup() {
 }
 ```
 
-![Multiple overlapping circles with radii from a list](../../images/voluntary/2023-2024-dks/006-list.png) 
+![Multiple overlapping circles with radii from a list](./imgs/006-list.png) 
 
 Das macht genau dasselbe wie das letzte Programm. `liste.length` ist wie der Name schon sagt die Laenge der Liste, also in unserem Fall hier 5. Im ersten Durchlauf der Schleife fuehren wir den Befehl mit dem ersten Element (Achtung Element an Stelle 0!) aus. In der zweiten Wiederholung der Schleife ist das zweite Element dran und so weiter. Das coole nun ist: Wenn wir neue Elemente in die Liste schreiben, brauchen wir nun nicht mehr eine neue Zeile wie 
 
@@ -498,7 +498,7 @@ function setup() {
 }
 ```
 
-![Even more overlapping circles with radii from a list](../../images/voluntary/2023-2024-dks/007-listbig.png) 
+![Even more overlapping circles with radii from a list](./imgs/007-listbig.png) 
 
 Zum Schluss koennen wir noch einen ersten Prototypen von unserem "SNAKE" Spiel bauen. Dazu nutzen wir auch eine Liste und speichern darin die x-Werte der einzelnen SNAKE-Kreise.
 
@@ -589,15 +589,15 @@ nix develop github:RobWalt/HEG-GTA#comfyNew
 
 Wenn der Befehl durchgelaufen ist, sollte sich VSCode mit einem Beispiel-Platzhalter-Projekt oeffnen.
 
-![VSCode is open after executing the nix command](../../images/voluntary/2023-2024-dks/008-vscode.png) 
+![VSCode is open after executing the nix command](./imgs/008-vscode.png) 
 
 VSCode braucht ein bisschen Zeit, um die Dateien zu analysieren. Wenn das geschafft ist, dann kannst du das Beispiel Programm ausfuehren, indem du in der `main.rs` Datei auf `Run` klickst. 
 
-![Run button is highlighted](../../images/voluntary/2023-2024-dks/009-run.png) 
+![Run button is highlighted](./imgs/009-run.png) 
 
 Danach sollte folgendes zu sehen sein.
 
-![A bluish square on a black background](../../images/voluntary/2023-2024-dks/010-basicrust.png) 
+![A bluish square on a black background](./imgs/010-basicrust.png) 
 
 ## Selbst das Programm anpassen - Variablen anlegen in Rust
 
@@ -1085,4 +1085,205 @@ pub fn update(c: &mut GameContext) {
 }
 ```
 
-![Snake mit mehr als einem Teil](../../images/voluntary/2023-2024-dks/011-snake.png)
+![Snake mit mehr als einem Teil](./imgs/011-snake.png)
+
+# 6. Kuchen und Kollisionserkennung
+
+## Zufaellige Kuchen
+
+Als naechstes brauchen wir etwas zu Essen fuer unsere Snake. Unser spontaner Einfall war es ihr einen Kuchen zu geben. Der Kuchen soll immer an einer zufaelligen Position erscheinen. Damit wir die Position wieder ueber mehrere frames speichern koennen, brauchen wir erstmal wieder ein neues Feld in unserem `GameState`. Ich denke, dass es inzwischen schon einfacher faellt das selbst zu machen. Deshalb lassen wir hier jetzt mal diesen Teil aus. Kleine Hinweise:
+
+- wir fuegen folgendes im `GameState` hinzu : `cake_center: Vec2`
+- wenn du nicht mehr weiter weisst, orientiere dich an einem der anderen Male von weiter oben
+
+Nun koennen wir diese Position nutzen, um einen Kreis zu zeichnen:
+
+```rust 
+pub fn update(c: &mut GameContext) {
+    let GameState { center, past_positions, tail_parts, cake_center } = &mut c.state;
+    
+    // ...
+    // ... anderer Code
+    // ...
+
+    draw_circle(*cake_center, 0.5, Color::rgb(1.0, 1.0, 1.0), 1);
+}
+```
+
+Damit der Kreis nun wirklich an einer zufaelligen Position auftaucht, muessen wir in `setup` auch wirklich die Variable auf eine zufaellige Position setzen. Dazu gibt es in `comfy` die `random_range` Funktion. Sie nimmt eine untere und eine obere Grenze und gibt einen zufaelligen Wert zwischen diesen beiden Werten zurueck. Sie wird zum Beispiel so hier verwendet:
+
+```rust
+let zahl = random_range(0.0, 10.0);
+```
+
+Hierbei wird Zahl eine Kommazahl zwischen `0.0` und `10.0` sein. Nun nutzen wir das einfach, um die `x` und `y` Koordinaten von `cake_center` zu setzen:
+
+```rust 
+pub fn setup(c: &mut GameContext) {
+
+    // ...
+    // ... anderer Code
+    // ...
+
+    c.state.cake_center.x = random_range(-5.0, 5.0);
+    c.state.cake_center.y = random_range(-5.0, 5.0);
+}
+```
+
+![Ein weisser Kreis mit zufaelliger Position ist neben der Snake zu sehen](./imgs/012-randomcake.png)
+
+## Kollision - Ein kleiner Exkurs
+
+### Das Problem
+
+Der Einfachheit halber haben wir den Kopf der Snake in einen Kreis geaendert. Das ist bereits auf dem letzten Bild zu sehen. Dies wird uns jetzt helfen die Kollision zwischen dem Kopf und dem Kuchen ordentlich zu entdecken. Die Kollision zwischen zwei Kreisen kann naemlich ziemlich einfach berechnet werden. Und `comfy` bietet uns wie immer auch noch Funktionalitaeten um das sogar noch mehr zu vereinfachen.
+
+Zunaechst schauen wir uns erstmal die beiden moeglichen Faelle an:
+
+1. Die zwei Kreise (Kopf der Snake und Kuchen) kollidieren
+
+![Zwei Kreise die ueberlappen](./imgs/013-collidingcircles.png)
+
+2. Die zwei Kreise kollidieren nicht
+
+![Zwei Kreise die nicht ueberlappen](./imgs/014-noncollidingcircles.png)
+
+### Die Loesung
+
+Nun haben wir uns folgende Strategie fuer den Kollisions-Check im GTA erarbeitet: 
+
+1. Ueber den Satz des Pythagoras kann man sich die Laenge der Strecke zwischen den zwei Kreismittelpunkten errechnen. Diese Laenge `L` ist die Distanz zwischen den zwei Kreisen. 
+
+![Satz des Pythagoras fuer Kreisabstand](./imgs/015-pythagoras.png)
+
+2. Nun sagen wir das `S` die Summe der Radien der beiden Kreise ist. `S = r1 + r2`
+
+![Summe der Radien](./imgs/016-sumradius.png)
+
+3. Nun machen wir eine Fallunterscheidung: 
+
+  - Ist die Distanz `L` groesser als die kombinierten Radien `S`, dann kollidieren die Kreise nicht
+
+  ![Kreise kollidieren](./imgs/017-nocollisionsolution.png)
+
+  - Ist die Distanz `L` kleiner als die kombinierten Radien `S`, dann kollidieren die Kreise
+
+  ![Kreise kollidieren](./imgs/018-collisionsolution.png)
+
+4. Das war's auch schon!
+
+## Kollision im Code
+
+Wie gesagt hilft uns `comfy` etwas bei der Implementierung unserer Theorie von oben aus. Wir muessen nicht den Satz des Pythagoras in Code schreiben. Der `Vec2` Typ in `comfy` kommt mit einer praktischen Funktion names `distance`, die einen anderen Punkt annimmt und uns die Distanz zu diesem Punkt ausgibt. Sie wird wiefolgt genutzt:
+
+```rust
+let a = Vec2::new(1.0, 0.0);
+let b = Vec2::new(3.0, 0.0);
+
+let dist = a.distance(b);
+
+// dist == 2.0
+```
+
+Damit koennen wir also schnell die Distanz zwischen Kopf der Snake und Kuchen berechnen:
+
+```rust 
+// ...
+
+let dist = head.distance(cake_center);
+
+// ...
+```
+
+Nun brauchen wir noch die Summe der Radien von Kopf- und Kuchenkreis. Da wir fuer beide fest den Radius `0.5` gewaehlt haben, ist die Summe einfach `1.0`.
+
+```rust 
+// ...
+
+let sum_radii = 0.5 + 0.5;
+
+// ...
+```
+
+Als letztes koennen wir die Fallunterscheidung von oben mit einem einfachen Vergleichsoperator implementieren und bekommen daraus einen `bool` Wert zurueck. `bool` Werte koennen nur entweder `true` (wahr) oder `false` (falsch) sein. Das heisst im Code
+
+```rust 
+// ...
+
+let is_colliding = dist < sum_radii;
+
+// ...
+```
+
+kann es sein, dass
+
+- `is_colliding` den Wert `true` annimmt, wenn die Distanz der Kreise kleiner der Summe der Radien ist
+- `is_colliding` den Wert `false` annimmt, wenn die Distanz der Kreise groesser der Summe der Radien ist
+
+Basiered auf dem `is_colliding` Wert, koennen wir nun zum Beispiel einfach mal eine andere Farbe fuer den Kuchen waehlen:
+
+```rust 
+// ...
+
+let cake_color = if is_colliding { Color::rgb(0.0, 0.0, 1.0) } else { Color::rbg(1.0, 1.0, 1.0) };
+
+draw_circle(*cake_center, 0.5, cake_color, 1);
+
+// ...
+```
+
+![Der Kuchen wird blau wenn die Snake mit ihm kollidiert](./imgs/019-collisionblue.png)
+
+Der gesamte Code ist nun 
+
+```rust 
+pub fn update(c: &mut GameContext) {
+    let GameState { center, past_positions, tail_parts, cake_center } = &mut c.state;
+    
+    // ...
+    // ... anderer Code
+    // ...
+
+    let dist = head.distance(cake_center);
+    let sum_radii = 0.5 + 0.5;
+
+    let is_colliding = dist < sum_radii;
+
+    let cake_color = if is_colliding {
+        Color::rgb(0.0, 0.0, 1.0)
+    } else {
+        Color::rbg(1.0, 1.0, 1.0)
+    };
+
+    draw_circle(*cake_center, 0.5, cake_color, 1);
+}
+```
+
+## Springende Kuchen
+
+Damit der Kuchen an eine neue Position springt, wenn wir mit ihm kollidieren, braucht es nun nicht mehr viel Code. Wir muessen einfach nur die Position wie in `setup` auf eine zufaellige Position setzen, wenn `is_colliding` wahr ist.
+
+```rust 
+    if is_colliding {
+        *cake_center.x = random_range(-5.0, 5.0);
+        *cake_center.y = random_range(-5.0, 5.0);
+    }
+```
+
+## Wachsende Schlangen
+
+Um die Schlange nun wachsen zu lassen, muessen wir auch nicht mehr viel machen. Es reicht folgendes zu tun: 
+
+- `num_parts` muss in den `GameState` ausgelagert werden (wir wollen es ja aendern)
+- wir setzen `num_parts` am Anfang auf `1`
+- immer, wenn `is_colliding` wahr ist, dann fuegen wir ein part hinzu (also wir addieren `1` auf `num_parts`)
+
+Im Code oben ergaenzen wir
+
+```rust 
+    if is_colliding {
+        *cake_center.x = random_range(-5.0, 5.0);
+        *cake_center.y = random_range(-5.0, 5.0);
+        *num_parts += 1;
+    }
+```
