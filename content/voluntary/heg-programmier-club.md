@@ -32,4 +32,4 @@ Anbei nochmal alle wichtigen Links von heute:
 
 # Fragen
 
-Bei Fragen koennt ihr mir gern jederzeit eine Email schreiben. Meine E-Mail Adresse ist robwalter96@gmail.com.
+Bei Fragen koennt ihr mir gern jederzeit eine Email schreiben. Meine E-Mail Adresse ist aviac@mailbox.org.
