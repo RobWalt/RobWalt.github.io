@@ -11,6 +11,6 @@ title="Donations"
 - [Free Software Foundation Europe](https://my.fsfe.org/donate) (I donate here)
 - [Chaos Computer Club](https://www.ccc.de/de/membership) (I'm a sponsoring member here)
 - [Codeberg](https://liberapay.com/codeberg/donate) (I write FOSS software for easier use of this)
-- [Woodpecker CI](https://opencollective.com/woodpecker-ci)
+- [DigitalCourage](https://civi.digitalcourage.de/civicrm/contribute/transact?reset=1&id=2)
 - [Bevy Game Engine](https://bevyengine.org/community/donate/)
-
+- [Woodpecker CI](https://opencollective.com/woodpecker-ci)
