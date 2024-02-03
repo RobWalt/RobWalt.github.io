@@ -65,7 +65,7 @@ of data to work on directly in Rust.
 A lot of the pets were named `"doggie"` (which is the fields default
 value), so the students began to wonder which other names were there
 in the set. Manually scrolling through the list took ages and so
-this was the perfect opportunity to count the occurances of each name
+this was the perfect opportunity to count the occurrences of each name
 programmaticly. We implemented it via a `HashMap`. Retrospectively,
 this was a mistake though. I probably gave bad examples (dictionaries)
 and wasn't really prepared to explain the concept well. This led to some
@@ -77,12 +77,12 @@ Next week I'll try to resolve the last confusions therea hopefully.
 
 # `fjo` progress
 
-This week I found some time to put into `fjo` again. Noth needed a bit of
+This week I found some time to put into `fjo` again. noth needed a bit of
 help with the `pr create` feature. The main issue here is the following:
 It's surprisingly hard to kind of sort the branches in git by expected
 priority. Give the goal that we want to show the users:
 
-1. A list of branches that are mergable 2. A list of branches the
+1. A list of branches that are mergeable 2. A list of branches the
 selection of 1. can be merged into
 
 We opted for letting the user decide everything manually via fuzzy search
