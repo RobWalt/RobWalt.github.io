@@ -1,0 +1,65 @@
+{
+  "nodes": {
+    "flake-parts": {
+      "inputs": {
+        "nixpkgs-lib": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1709336216,
+        "narHash": "sha256-Dt/wOWeW6Sqm11Yh+2+t0dfEWxoMxGBvv3JpIocFl9E=",
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "rev": "f7b3c975cf067e56e7cda6cb098ebe3fb4d74ca2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "type": "github"
+      }
+    },
+    "hermit-zola": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1706597483,
+        "narHash": "sha256-1KNCIHUO6IqtR6emzvnyutAJdrVZitgJ/MFqCmOSbz4=",
+        "owner": "VersBinarii",
+        "repo": "hermit_zola",
+        "rev": "a0180adf4b61cb917b00d2587eb87eb0ec701f47",
+        "type": "github"
+      },
+      "original": {
+        "owner": "VersBinarii",
+        "repo": "hermit_zola",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1711124224,
+        "narHash": "sha256-l0zlN/3CiodvWDtfBOVxeTwYSRz93muVbXWSpaMjXxM=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "56528ee42526794d413d6f244648aaee4a7b56c0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-23.11",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flake-parts": "flake-parts",
+        "hermit-zola": "hermit-zola",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
