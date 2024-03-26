@@ -9,7 +9,7 @@ theme = "hermit_zola"
 build_search_index = true
 
 taxonomies = [
-           {name = "tags", rss = true}
+  { name = "tags", rss = true }
 ]
 
 
@@ -17,7 +17,7 @@ taxonomies = [
 highlight_code = true
 
 [extra]
-home_subtitle = "United we stand, devided we fall"
+home_subtitle = "United we stand, divided we fall"
 
 hermit_menu = [
     { link = "/voluntary", name = "Voluntary Work" },
@@ -32,7 +32,7 @@ hermit_social = [
     { name = "codeberg", link = "https://codeberg.org/RobWalt" },
     { name = "email", link = "mailto:aviac@mailbox.org" },
     { name = "opencollective", link = "https://aviac.dev/donations" },
-    { name = "matrix", link = "@aviac:matrix.org" },
+    { name = "matrix", link = "@aviac:voidd.social" },
 ]
 
 [extra.author]
