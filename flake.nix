@@ -21,6 +21,7 @@
       imports = [ ./nix/build.nix ];
       perSystem = { config, self', inputs', pkgs, system, ... }: {
         packages.default = self'.packages.website;
+        devShells.default = pkgs.mkShell { packages = [ pkgs.zola ]; };
       };
     };
 }
