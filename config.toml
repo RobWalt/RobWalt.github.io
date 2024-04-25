@@ -23,13 +23,10 @@ hermit_menu = [
     { link = "/voluntary", name = "Voluntary Work" },
     { link = "/dev-log", name = "Dev Logs" },
     { link = "/donations", name = "Donations" },
-   # { link = "/posts", name = "Posts" },
-   # { link = "/about", name = "About" },
 ]
 
 hermit_social = [
-    { name = "mastodon", link = "https://mastodon.social/@RobWalt" },
-    { name = "codeberg", link = "https://codeberg.org/RobWalt" },
+    { name = "codeberg", link = "https://codeberg.org/Aviac" },
     { name = "email", link = "mailto:aviac@mailbox.org" },
     { name = "opencollective", link = "https://aviac.dev/donations" },
     { name = "matrix", link = "@aviac:voidd.social" },
