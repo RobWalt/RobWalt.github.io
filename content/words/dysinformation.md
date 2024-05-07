@@ -5,7 +5,7 @@ date = 2024-05-01
 sources = [ "Bolo'Bolo, P.M." ]
 +++
 
-P.M. beschreibt Dysinformation also eine Form der
+P.M. beschreibt Dysinformation als eine Form der
 [Subversion](@/words/subversion.md), die under anderem durch die folgenden
 Dinge umgesetzt werden kann:
 

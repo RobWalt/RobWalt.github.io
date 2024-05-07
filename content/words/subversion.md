@@ -6,7 +6,10 @@ sources = [ "Bolo'Bolo, P.M." ]
 +++
 
 Wortwörtlich "Umsturz" oder "Zerstörung". P.M. verwendet es um die einzelnen,
-isolierten Akte des Widerstands gegen die [Planetare Arbeitsmascheine](@/words/planetare_arbeitsmaschine.md) zu beschreiben. Auf die im Buch beschriebenen Menschengruppen heruntergebrochen kann man Subversionen wiefolgt kategorisieren:
+isolierten Akte des Widerstands gegen die
+[Planetare Arbeitsmascheine](@/words/planetare_arbeitsmaschine.md) zu
+beschreiben. Auf die im Buch beschriebenen Menschengruppen heruntergebrochen
+kann man Subversionen wiefolgt kategorisieren:
 
 - [A - Dysinformation](@/words/dysinformation.md)
 - [B - Dysproduktion](@/words/dysproduktion.md)

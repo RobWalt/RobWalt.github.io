@@ -34,6 +34,6 @@ Die PAM kann ihre Macht über uns aufrecht erhalten, indem sie:
 
   Aus meiner persönlichen Sicht ist eine allgemeine Form der
   [Subversion](@/words/subversion.md) der PAM, diese beiden Fakten aktive im
-  Bewusstsein zu halten und sich darauf zu konzentrieren, was uns also Menschen
+  Bewusstsein zu halten und sich darauf zu konzentrieren, was uns als Menschen
   eint, anstatt auf unsere Unterschiede zu achten, auch wenn dies
   zugegebenermaßen teils sehr schwer ist.

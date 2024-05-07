@@ -5,7 +5,7 @@ date = 2024-05-01
 sources = [ "Bolo'Bolo, P.M." ]
 +++
 
-P.M. beschreibt Dyruption also eine Form der
+P.M. beschreibt Dyruption als eine Form der
 [Subversion](@/words/subversion.md), die under anderem durch die folgenden
 Dinge umgesetzt werden kann:
 
