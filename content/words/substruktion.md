@@ -2,7 +2,7 @@
 title = "Substruktion"
 date = 2024-05-01
 [extra]
-sources = [ "Bolo'Bolo, P.M." ]
+literature = [ "Bolo'Bolo, P.M." ]
 +++
 
 Eine Kombination vieler Foremen von [Subversion](@/words/subversion.md). Dazu gehören

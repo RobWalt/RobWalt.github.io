@@ -2,7 +2,7 @@
 title = "Dysproduktion"
 date = 2024-05-01
 [extra]
-sources = [ "Bolo'Bolo, P.M." ]
+literature = [ "Bolo'Bolo, P.M." ]
 +++
 
 P.M. beschreibt Dysproduktion als eine Form der

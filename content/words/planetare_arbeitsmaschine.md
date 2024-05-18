@@ -2,7 +2,7 @@
 title = "Planetare Arbeitsmaschine"
 date = 2024-05-01
 [extra]
-sources = [ "Bolo'Bolo, P.M." ]
+literature = [ "Bolo'Bolo, P.M." ]
 +++
 
 P.M. beschreibt in seinem Buch Bolo'Bolo die Planetare Arbeitsmaschine (PAM), welche

@@ -2,7 +2,7 @@
 title = "Heideggers Forths"
 date = 2024-05-07
 [extra]
-# sources = [ ]
+# literature = [ ]
 +++
 
 Disclaimer: Hier sind mir leider die Quellen entgangen und ich muss sie im Nachinein noch einmal ergänzen und diese Seite hier überarbeiten. Bis dahin ist der Informationsgehalt der Seite mit Vorsicht zu genießen

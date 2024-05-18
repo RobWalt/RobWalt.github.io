@@ -2,7 +2,7 @@
 title = "Anarchismus"
 date = 2024-05-02
 [extra]
-sources = [ ]
+literature = [ ]
 +++
 
 Es gibt viele Definitionen von Anarchismus und der Begriff ist, wie unsere

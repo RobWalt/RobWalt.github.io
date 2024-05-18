@@ -2,7 +2,7 @@
 title = "Etymologie"
 date = 2024-05-07
 [extra]
-# sources = [ ]
+# literature = [ ]
 +++
 
 > Die Etymologie, auch Wortherkunft[1] und zudem kurz Herkunft genannt, befasst

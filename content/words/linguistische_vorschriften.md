@@ -2,7 +2,7 @@
 title = "Linguistische Vorschriften"
 date = 2024-05-07
 [extra]
-# sources = [ ]
+# literature = [ ]
 +++
 
 > Linguistische Vorschriften (linguistic prescription), sind Regeln für den

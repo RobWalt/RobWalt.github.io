@@ -2,7 +2,7 @@
 title = "Dogmatismus"
 date = 2024-05-02
 [extra]
-sources = [ ]
+literature = [ ]
 +++
 
 > Under einem Dogma versteht man eine feststehende Definition oder eine

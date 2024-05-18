@@ -2,7 +2,7 @@
 title = "Dysruption"
 date = 2024-05-01
 [extra]
-sources = [ "Bolo'Bolo, P.M." ]
+literature = [ "Bolo'Bolo, P.M." ]
 +++
 
 P.M. beschreibt Dyruption als eine Form der

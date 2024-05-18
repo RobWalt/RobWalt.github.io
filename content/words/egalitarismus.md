@@ -2,7 +2,7 @@
 title = "Egalitarismus"
 date = 2024-05-07
 [extra]
-# sources = [ ]
+# literature = [ ]
 +++
 
 > Ideologische Bestrebungen, in staatlichen Gesellschaften soziale Gleichheit

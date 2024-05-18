@@ -2,7 +2,7 @@
 title = "Nationaleinkommen"
 date = 2024-05-07
 [extra]
-sources = [ "Eine kurze Geschichte der Gleichheit, Thomas Piketty" ]
+literature = [ "Eine kurze Geschichte der Gleichheit, Thomas Piketty" ]
 +++
 
 Thomas Piketty legt in seinem Buch "Eine kurze Geschichte der Gleichheit" mehr

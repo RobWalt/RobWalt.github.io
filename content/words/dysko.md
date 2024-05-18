@@ -2,7 +2,7 @@
 title = "Dysko"
 date = 2024-05-01
 [extra]
-sources = [ "Bolo'Bolo, P.M." ]
+literature = [ "Bolo'Bolo, P.M." ]
 +++
 
 Dyskommunikation (Dysko) beschreibt die koordinierte Anwendung von
