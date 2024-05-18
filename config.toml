@@ -22,13 +22,13 @@ home_subtitle = "United we stand, divided we fall"
 hermit_menu = [
     { link = "/voluntary", name = "Voluntary Work" },
     { link = "/dev-log", name = "Dev Logs" },
-    { link = "/donations", name = "Donations" },
+    # { link = "/donations", name = "Donations" },
 ]
 
 hermit_social = [
     { name = "codeberg", link = "https://codeberg.org/Aviac" },
     { name = "email", link = "mailto:aviac@mailbox.org" },
-    { name = "opencollective", link = "https://aviac.dev/donations" },
+    # { name = "opencollective", link = "https://aviac.dev/donations" },
     { name = "matrix", link = "@aviac:voidd.social" },
 ]
 
